@@ -10,29 +10,18 @@ import random
 def lanzar_dados():
     value = random.randint(1, 5)
     return value
-    
-
-message = {
-    1: lambda  : print('ganaste una flor'),
-    2: lambda  : print('ganaste un tatuaje'),
-    3: lambda  : print('ganaste un libro'),
-    4: lambda  : print('ganaste un viaje'),
-    5: lambda  : print('no ganaste nada')
-}
-
 
 def descifrar_premio(num):
-    message[num]()
-    # if num == 1:
-    #     print('ganaste una flor')       
-    # elif num == 2: 
-    #     print('ganaste un tatuaje')
-    # elif num == 3: 
-    #     print('ganaste un libro')
-    # elif num == 4: 
-    #     print('ganaste un viaje')
-    # else: 
-    #     print('no ganaste nada')
+    if num == 1:
+        print('ganaste una flor')       
+    elif num == 2: 
+        print('ganaste un tatuaje')
+    elif num == 3: 
+        print('ganaste un libro')
+    elif num == 4: 
+        print('ganaste un viaje')
+    else: 
+        print('no ganaste nada')
 
 dado = lanzar_dados()
 print('tu dado es ', dado)
