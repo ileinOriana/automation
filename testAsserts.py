@@ -18,12 +18,12 @@ class PruebasDeStandards(unittest.TestCase):
     def test_algo_es_verdadero(self):
         a = 2 + 2 
         b = 3 + 1 
-        self.assertTrue(a == b, "a y b deberían ser iguales")
+        self.assertTrue(a == b, "a y b deberian ser iguales")
 
     def test_algo_es_mayor(self):
         a = 5
         b = 3 
-        self.assertTrue(a>b, "a debería ser mayor a b")
+        self.assertTrue(a>b, "a deberia ser mayor a b")
 
     
     def test_algo_es_mayor_II(self):

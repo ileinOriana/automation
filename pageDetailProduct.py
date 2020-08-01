@@ -1,3 +1,5 @@
+from selenium.webdriver.common.by import By
+
 class PageDetailProduct():
 
     def __init__(self, driver):
@@ -15,3 +17,5 @@ class PageDetailProduct():
 
     def get_number_of_elements(self):
         return self.driver.find_element_by_id(self.quantity_input).get_attribute('value')
+
+    
