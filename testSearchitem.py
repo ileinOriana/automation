@@ -1,10 +1,10 @@
 import unittest
 from selenium import webdriver
 import time
-from pageIndex import PageIndex
-from pageItems import PageItems
-from pageTshirts import PageTshirts
-from pageDetailProduct import PageDetailProduct
+from page_objects.pageIndex import PageIndex
+from page_objects.pageItems import PageItems
+from page_objects.pageTshirts import PageTshirts
+from page_objects.pageDetailProduct import PageDetailProduct
 from selenium.webdriver.chrome.options import Options
 
 class SearchCases(unittest.TestCase):
@@ -18,7 +18,7 @@ class SearchCases(unittest.TestCase):
         self.driver.get('http://automationpractice.com/index.php')
         self.driver.implicitly_wait(5)
         #self.driver.maximize_window()
-        #self.driver.set_window_size(200, 240) Esto es para setear el tamaño del navegador
+        #self.driver.set_window_size(200, 240) Esto es para setear el tamanio del navegador
         self.indexPage = PageIndex(self.driver)
         self.itemsPage = PageItems(self.driver)
         self.tshirtsPage = PageTshirts(self.driver)
